@@ -11,6 +11,7 @@ body {
 }
 
 #navbar{
+    width: 100%;
     min-height: 60px;
     border: 1px solid blue;
 }
@@ -32,7 +33,19 @@ body {
     }
 }
 
+
+
+
+#aside{
+    float: left;
+    width: 15%;
+    min-height: 1500px;
+    border: 1px solid green;
+}
+
 section {
-    max-width: 1000px;
+    width: 70%;
+    float: left;
     border: 1px solid red;
+    
 }
