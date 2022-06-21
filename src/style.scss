@@ -1,5 +1,6 @@
 $color-fondo: #212021;
 $color-fuente: #ccd6f6;
+$color-secundario: #d51323;
 @import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&family=Poppins:wght@400;700&display=swap');
 
 
@@ -13,7 +14,7 @@ body {
 }
 
 #navbar{
-    width: 100%;
+    width: 99.9%;
     min-height: 60px;
     border: 1px solid blue;
 }
@@ -28,10 +29,15 @@ body {
     list-style: none;
     margin-right: 40px;
     margin-top: 20px;
+    font-family: 'Fira Mono', monospace;
     
     a {
         text-decoration: none;
         color: white;
+    }
+
+    span{
+        color: $color-secundario;
     }
 }
 
@@ -46,7 +52,7 @@ body {
 }
 
 section {
-    width: 75%;
+    width: 87%;
     float: left;
     border: 1px solid red;
     
@@ -54,12 +60,12 @@ section {
 
 #hero {
     margin-left: 6em;
-    margin-top: 3em;
+    margin-top: 10em;
     margin-bottom: 20em;
     
     h1{
         color: #ccd6f6;
-        font-size: 60px;
+        font-size: 90px;
         font-family: 'Poppins', sans-serif;
     }
 
@@ -67,6 +73,7 @@ section {
         color: #ccd6f6;
         opacity: 0.7;
         font-family: 'Fira Mono', monospace;
+        font-size: 30px;
     }
 }
 
@@ -76,69 +83,115 @@ section {
 
     h3 {
         font-family: 'Poppins', sans-serif;
-        font-size: 30px;
-        color: #d51323;
+        font-size: 50px;
+        color: $color-fuente;
     }
 
     p{
         color: #ccd6f6;
         opacity: 0.7;
         font-family: 'Fira Mono', monospace;
+        font-size: 25px;
+        width: 35em;
+    }
+    
+    span {
+        color: #d51323;
     }
 }
 
 #my-projects{
-    margin-left: 6em;
+    margin-left: 9em;
     margin-bottom: 15em;
 
     h3{
         font-family: 'Poppins', sans-serif;
-        font-size: 30px;
+        font-size: 50px;
+        color: $color-fuente;
+    }
+
+    span {
         color: #d51323;
     }
 }
+
 
 #skills{
     margin-left: 6em;
     margin-bottom: 10em;
+    border: 1px solid rgb(215, 91, 8);
+
 
     h3 {
         font-family: 'Poppins', sans-serif;
-        font-size: 30px;
-        color: #d51323;
+        font-size: 50px;
+        color: $color-fuente;
     }
 
-    td {
-        text-align: center;
-        color: #d51323;
-        font-family: 'Fira Mono', monospace;
-        padding: 1.5em;
-        font-size: 17px;
+    span {
+        color:#d51323
     }
+
 
     .html-icon{
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
     }
 
     .css-icon{
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
     }
 
     .javascript-icon{
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
     }
 
     .sass-icon{
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
     }
 
     .bootstrap-icon{
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
     }
 }
+
+#table-skills1{
+    padding-top: 5em;
+    p {
+        text-align: center;
+        font-family: 'Fira Mono', monospace;
+        color: #d51323;
+        font-size: 25px;
+    }
+    
+    li {
+        padding-left: 2em;
+        display: inline-block;
+    }
+}
+
+#table-skills2{
+    
+    p {
+        text-align: center;
+        font-family: 'Fira Mono', monospace;
+        color: #d51323;
+        font-size: 25px;
+    }
+    
+    li {
+        padding-left: 2em;
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #aside{
+        display: none;
+    }
+  }
 
