@@ -15,6 +15,7 @@ body {
   overflow: hidden;
   position: fixed;
   top: 0;
+  z-index: 1;
   -webkit-backdrop-filter: blur(15px);
   backdrop-filter: blur(15px);
   -webkit-box-shadow: -14px 18px 17px -15px rgba(0, 0, 0, 0.75);
@@ -51,6 +52,12 @@ body {
   color: #d51323;
 }
 
+#flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 #aside {
   float: left;
   width: 12%;
@@ -61,18 +68,17 @@ body {
       -ms-flex: 1;
           flex: 1;
   height: 100%;
-  border: 1px solid #212021;
 }
 
 #aside .linea-texto {
   position: fixed;
   bottom: 0;
-  left: 5em;
+  left: 3em;
 }
 
 #aside .texto-vertical {
   font-family: 'Fira Mono', monospace;
-  font-size: 15px;
+  font-size: 12px;
   color: #ccd6f6;
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
@@ -84,7 +90,7 @@ body {
 }
 
 #aside .line-vertical {
-  height: 20em;
+  height: 15em;
   width: 1px;
   background-color: #ccd6f6;
 }
