@@ -16,8 +16,15 @@ body {
 #navbar{
     width: 99.9%;
     min-height: 60px;
-    border: 1px solid blue;
-
+    /* border: 1px solid blue; */
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    -webkit-box-shadow: -14px 18px 17px -15px rgba(0,0,0,0.75);
+    -moz-box-shadow: -14px 18px 17px -15px rgba(0,0,0,0.75);
+    box-shadow: -14px 18px 17px -15px rgba(0,0,0,0.75);
 }
 
 #logo{
@@ -26,6 +33,7 @@ body {
 }
 
 .botones-nav{
+    display: block;
     float: right;
     list-style: none;
     margin-right: 40px;
@@ -35,6 +43,7 @@ body {
     a {
         text-decoration: none;
         color: white;
+        font-size: 12px;
     }
 
     a:hover {
@@ -53,15 +62,43 @@ body {
 #aside{
     float: left;
     width: 12%;
-    min-height: 1500px;
-    border: 1px solid green;
+    display: flex;
+    flex: 1;
+    height: 100%;
+    border: 1px solid $color-fondo;
+
+    .linea-texto{
+        position: fixed;
+        bottom: 0;
+        left: 5em;
+    }
+
+    .texto-vertical {
+        font-family: 'Fira Mono', monospace;
+        font-size: 15px;
+        color: $color-fuente;
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+        margin-bottom: 10px;
+        margin-left: -5px;
+    }
+
+    .line-vertical{
+        height: 20em;
+        width: 1px;
+        background-color: $color-fuente;
+
+    }
+}
+
+main {
+    margin-top: 60px;
 }
 
 section {
     width: 87%;
     float: left;
-    border: 1px solid red;
-    
+    //border: 1px solid red;
 }
 
 #hero {
@@ -135,7 +172,7 @@ section {
 #skills{
     margin-left: 6em;
     margin-bottom: 10em;
-    border: 1px solid rgb(215, 91, 8);
+    //border: 1px solid rgb(215, 91, 8);
 
 
     h3 {
@@ -189,6 +226,8 @@ section {
         display: inline-block;
     }
 }
+
+
 
 #table-skills2{
     
