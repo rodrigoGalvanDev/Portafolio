@@ -32,6 +32,12 @@ body {
   color: white;
 }
 
+.botones-nav a:hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  color: #d51323;
+}
+
 .botones-nav span {
   color: #d51323;
 }
@@ -181,6 +187,25 @@ section {
 #table-skills2 li {
   padding-left: 2em;
   display: inline-block;
+}
+
+#contact h3 {
+  color: #ccd6f6;
+  font-family: 'Poppins', sans-serif;
+  font-size: 35px;
+  text-align: center;
+}
+
+#contact h3 span {
+  color: #d51323;
+}
+
+#contact li {
+  list-style: none;
+}
+
+#contact a {
+  margin-left: 48%;
 }
 
 @media only screen and (max-width: 900px) {
