@@ -34,6 +34,8 @@ body {
   margin-right: 40px;
   margin-top: 20px;
   font-family: 'Fira Mono', monospace;
+  -webkit-animation: a-load 300ms ease-out;
+          animation: a-load 300ms ease-out;
 }
 
 .botones-nav a {
@@ -74,6 +76,8 @@ body {
   position: fixed;
   bottom: 0;
   left: 3em;
+  -webkit-animation: aside-load 0.8s ease-in-out;
+          animation: aside-load 0.8s ease-in-out;
 }
 
 #aside .texto-vertical {
@@ -107,7 +111,24 @@ section {
 #hero {
   margin-left: 6em;
   margin-top: 18em;
-  margin-bottom: 50em;
+  margin-bottom: 35em;
+}
+
+#hero img {
+  width: 75px;
+  height: 75px;
+  margin-top: 20em;
+  margin-left: 35%;
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 #hero h1 {
@@ -130,59 +151,6 @@ section {
   font-size: 30px;
 }
 
-#cards {
-  margin-top: 3em;
-}
-
-#cards .card1 {
-  width: 300px;
-  height: 500px;
-  -webkit-box-shadow: 0 0 30px black;
-          box-shadow: 0 0 30px black;
-}
-
-#cards .card1 .card1-image {
-  width: 300px;
-  height: 300px;
-  background-image: linear-gradient(135deg, #d51323, #ff0011);
-}
-
-#cards .card1 img {
-  width: 300px;
-  height: 300px;
-  opacity: 0.7;
-}
-
-#cards .card1 a {
-  text-decoration: none;
-}
-
-#cards .card1 .description-card1 {
-  height: 200px;
-  width: 300px;
-  background-color: #151415;
-}
-
-#cards .card1 .p-card1 {
-  font-family: 'Fira Mono', monospace;
-  color: #ccd6f6;
-  text-decoration: none;
-  margin-left: 10px;
-}
-
-#cards .card1 .tech-card1 {
-  margin-top: 133px;
-  margin-left: 10px;
-  font-family: 'Fira Mono', monospace;
-  color: #d51323;
-}
-
-#cards .card1:hover img {
-  opacity: 1;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
 #about-me {
   margin-left: 6em;
   margin-bottom: 15em;
@@ -194,7 +162,7 @@ section {
   color: #ccd6f6;
 }
 
-#about-me h3 div {
+#about-me h3 .linea-h3 {
   background-color: #ccd6f6;
   height: 1px;
   width: 30%;
@@ -224,13 +192,84 @@ section {
   color: #ccd6f6;
 }
 
+#my-projects h3 .linea-h3 {
+  background-color: #ccd6f6;
+  height: 1px;
+  width: 30%;
+  display: inline-block;
+}
+
 #my-projects span {
   color: #d51323;
+}
+
+#my-projects #cards {
+  margin-top: 3em;
+}
+
+#my-projects #cards .card1 {
+  width: 300px;
+  height: 500px;
+  -webkit-box-shadow: 0 0 30px black;
+          box-shadow: 0 0 30px black;
+  position: relative;
+  -webkit-transition: -webkit-transform ease 300ms;
+  transition: -webkit-transform ease 300ms;
+  transition: transform ease 300ms;
+  transition: transform ease 300ms, -webkit-transform ease 300ms;
+}
+
+#my-projects #cards .card1 .card1-image {
+  width: 300px;
+  height: 300px;
+  background-image: linear-gradient(135deg, #d51323, #ff0011);
+}
+
+#my-projects #cards .card1 img {
+  width: 300px;
+  height: 300px;
+  opacity: 0.7;
+}
+
+#my-projects #cards .card1 a {
+  text-decoration: none;
+}
+
+#my-projects #cards .card1 .description-card1 {
+  height: 200px;
+  width: 300px;
+  background-color: #151415;
+}
+
+#my-projects #cards .card1 .p-card1 {
+  font-family: 'Fira Mono', monospace;
+  color: #ccd6f6;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+#my-projects #cards .card1 .tech-card1 {
+  margin-top: 133px;
+  margin-left: 10px;
+  font-family: 'Fira Mono', monospace;
+  color: #d51323;
+}
+
+#my-projects #cards .card1:hover {
+  -webkit-transform: translate(0, -10px);
+          transform: translate(0, -10px);
+}
+
+#my-projects #cards .card1:hover img {
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 #skills {
   margin-left: 6em;
   margin-bottom: 10em;
+  margin-top: 20em;
 }
 
 #skills h3 {
@@ -239,33 +278,40 @@ section {
   color: #ccd6f6;
 }
 
+#skills h3 .linea-h3 {
+  background-color: #ccd6f6;
+  height: 1px;
+  width: 30%;
+  display: inline-block;
+}
+
 #skills span {
   color: #d51323;
 }
 
 #skills .html-icon {
-  width: 150px;
-  height: 150px;
+  width: 125px;
+  height: 125px;
 }
 
 #skills .css-icon {
-  width: 150px;
-  height: 150px;
+  width: 125px;
+  height: 125px;
 }
 
 #skills .javascript-icon {
-  width: 150px;
-  height: 150px;
+  width: 125px;
+  height: 125px;
 }
 
 #skills .sass-icon {
-  width: 150px;
-  height: 150px;
+  width: 125px;
+  height: 125px;
 }
 
 #skills .bootstrap-icon {
-  width: 150px;
-  height: 150px;
+  width: 125px;
+  height: 125px;
 }
 
 #table-skills1 {
@@ -276,7 +322,7 @@ section {
   text-align: center;
   font-family: 'Fira Mono', monospace;
   color: #d51323;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 #table-skills1 li {
@@ -288,12 +334,17 @@ section {
   text-align: center;
   font-family: 'Fira Mono', monospace;
   color: #d51323;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 #table-skills2 li {
   padding-left: 2em;
   display: inline-block;
+}
+
+#contact {
+  margin-top: 15em;
+  margin-bottom: 5em;
 }
 
 #contact h3 {
@@ -311,13 +362,129 @@ section {
   list-style: none;
 }
 
-#contact a {
+#contact li p {
+  font-family: 'Fira Mono', monospace;
+  color: #d51323;
   margin-left: 48%;
+}
+
+#contact a {
+  margin-left: 46.5%;
+}
+
+#contact a img {
+  width: 120px;
+  height: 120px;
 }
 
 @media only screen and (max-width: 900px) {
   #aside {
     display: none;
+  }
+  #hero {
+    margin-top: 6em;
+  }
+  #hero img {
+    margin-top: 10em;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #about-me h3 .linea-h3 {
+    display: none;
+  }
+  #skills h3 .linea-h3 {
+    display: none;
+  }
+  #my-projects h3 .linea-h3 {
+    display: none;
+  }
+}
+
+/*@keyframes a-load{
+    0%{
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes hero-load {
+    0%{
+        opacity: 0;
+        transform: translateY(10%);
+    }
+
+
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}*/
+@-webkit-keyframes aside-load {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes aside-load {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  30% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  50% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  30% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  50% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 /*# sourceMappingURL=style.css.map */

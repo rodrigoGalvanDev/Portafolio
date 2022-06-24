@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/style.css">
     <title>Portfolio | Rodrigo Galvan</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     
-    <div id="navbar">
+    <div id="navbar" data-aos="fade-down" data-aos-once='true'>
                 <a href="" id="logo">Logo</a>
                 <ul>
                 <li class="botones-nav">
@@ -43,18 +44,19 @@
 
         
 
-        <div id="hero">
+        <div data-aos="fade-up" data-aos-once='true' id="hero">
             <h1>Rodrigo <span>Galvan</span> </h1>
             <p>I am a web development student with a passion for learning and coding new stuff</p>
+            <img src="/img/arrow.png" alt="Arrow">
         </div>
 
-        <div id="about-me">
-            <h3><span>0_</span> About me <div class="linea1"></div></h3>
+        <div data-aos="fade-up" data-aos-once='true' id="about-me">
+            <h3><span>0_</span> About me <div class="linea-h3" ></div></h3>
             <p>My name is Rodrigo Galvan, I am 22 years old. I was born in Santiago del Estero, Argentina and I am currently living here.</p> <br> <p>Since I was a teenager I was interested in programming and a few months ago I decided to be a full time student. My current goal is to learn the necessary technologies to have a better performance in a future job</p>
         </div>
 
-        <div id="my-projects">
-            <h3><span>1_</span> My projects:</h3>
+        <div data-aos="fade-up" data-aos-once='true' id="my-projects">
+            <h3><span>1_</span> My projects <div class="linea-h3" ></div></h3>
             
             <div id="cards">
                 <div class="card1">
@@ -74,8 +76,8 @@
             </div>
         </div>
         
-        <div id="skills">
-            <h3><span>2_</span> Skills I learned so far:</h3>
+        <div data-aos="fade-up" data-aos-once='true' id="skills">
+            <h3><span>2_</span> Skills I learned so far <div class="linea-h3" ></div></h3>
             
             <ul id="table-skills1">
                 <li>
@@ -111,15 +113,17 @@
             
         </div>
 
-        <div id="contact">
+        <div data-aos="fade-up" data-aos-once='true' id="contact">
             <h3> <span>3_</span> You can find me in</h3>
             <ul>
                 <li>
+                    <p>Github</p>
                     <a href="">
                         <img class="github-icon" src="/img/github icon.png" alt="">
                     </a>
                 </li>
                 <li>
+                    <p>LinkedIn</p>
                     <a href="">
                         <img class="linkedin-icon" src="/img/linkedin icon.png" alt="">
                     </a>
@@ -130,6 +134,10 @@
     </section>
     </div>
     
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script type="text/javascript" src="/src/main.js"></script>
 </body>
 </html>

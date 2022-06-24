@@ -40,7 +40,8 @@ body {
     margin-right: 40px;
     margin-top: 20px;
     font-family: 'Fira Mono', monospace;
-    
+    animation: a-load 300ms ease-out;
+
     a {
         text-decoration: none;
         color: white;
@@ -73,6 +74,7 @@ body {
         position: fixed;
         bottom: 0;
         left: 3em;
+        animation: aside-load 0.8s ease-in-out;
     }
 
     .texto-vertical {
@@ -106,8 +108,22 @@ section {
 #hero {
     margin-left: 6em;
     margin-top: 18em;
-    margin-bottom: 50em;
-    
+    margin-bottom: 35em;
+
+
+    img{
+        width: 75px;
+        height: 75px;
+        margin-top: 20em;
+        margin-left: 35%;
+        animation-name: bounce;
+        animation-timing-function: ease;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-delay: 1s;
+    }
+
+
     h1{
         color: #ccd6f6;
         font-size: 90px;
@@ -129,64 +145,7 @@ section {
     }
 }
 
-#cards{
 
-    margin-top: 3em;
-    .card1{
-        width: 300px;
-        height: 500px;
-        box-shadow: 0 0 30px rgb(0, 0, 0);
-
-        .card1-image{
-            width: 300px;
-            height: 300px;
-            background-image: linear-gradient(
-                135deg,
-                $color-secundario,
-                #ff0011
-            );
-        }
-
-        img {
-            width: 300px;
-            height: 300px;
-            opacity: 0.7;
-        }
-
-        a{
-            text-decoration: none;
-        }
-
-        
-
-        .description-card1{
-            height: 200px;
-            width: 300px;
-            background-color: #151415;
-        }
-
-        .p-card1{
-            font-family: 'Fira Mono', monospace;
-            color: $color-fuente;
-            text-decoration: none;
-            margin-left: 10px;
-        }
-
-        .tech-card1{
-            margin-top: 133px;
-            margin-left: 10px;
-            font-family: 'Fira Mono', monospace;
-            color: $color-secundario;
-        }
-    }
-
-    .card1:hover{
-        img{
-            opacity: 1;
-            transition: 0.3s;
-        }
-    }
-}
 
 #about-me{
     margin-left: 6em;
@@ -197,7 +156,7 @@ section {
         font-size: 35px;
         color: $color-fuente;
 
-        div {
+        .linea-h3 {
             background-color: $color-fuente;
             height: 1px;
             width: 30%;
@@ -226,10 +185,81 @@ section {
         font-family: 'Poppins', sans-serif;
         font-size: 35px;
         color: $color-fuente;
+
+        .linea-h3{
+            background-color: $color-fuente;
+            height: 1px;
+            width: 30%;
+            display: inline-block;
+        }
     }
 
     span {
         color: #d51323;
+    }
+
+    #cards{
+
+        margin-top: 3em;
+        .card1{
+            width: 300px;
+            height: 500px;
+            box-shadow: 0 0 30px rgb(0, 0, 0);
+            position: relative;
+            transition: transform ease 300ms;
+    
+            .card1-image{
+                width: 300px;
+                height: 300px;
+                background-image: linear-gradient(
+                    135deg,
+                    $color-secundario,
+                    #ff0011
+                );
+            }
+    
+            img {
+                width: 300px;
+                height: 300px;
+                opacity: 0.7;
+            }
+    
+            a{
+                text-decoration: none;
+            }
+    
+            
+    
+            .description-card1{
+                height: 200px;
+                width: 300px;
+                background-color: #151415;
+            }
+    
+            .p-card1{
+                font-family: 'Fira Mono', monospace;
+                color: $color-fuente;
+                text-decoration: none;
+                margin-left: 10px;
+            }
+    
+            .tech-card1{
+                margin-top: 133px;
+                margin-left: 10px;
+                font-family: 'Fira Mono', monospace;
+                color: $color-secundario;
+            }
+        }
+    
+        .card1:hover{
+            img{
+                opacity: 1;
+                transition: 0.3s;
+            }
+    
+            transform: translate(0, -10px);
+    
+        }
     }
 }
 
@@ -237,6 +267,7 @@ section {
 #skills{
     margin-left: 6em;
     margin-bottom: 10em;
+    margin-top: 20em;
     //border: 1px solid rgb(215, 91, 8);
 
 
@@ -244,6 +275,13 @@ section {
         font-family: 'Poppins', sans-serif;
         font-size: 35px;
         color: $color-fuente;
+
+        .linea-h3 {
+            background-color: $color-fuente;
+            height: 1px;
+            width: 30%;
+            display: inline-block;
+        }
     }
 
     span {
@@ -252,28 +290,28 @@ section {
 
 
     .html-icon{
-        width: 150px;
-        height: 150px;
+        width: 125px;
+        height: 125px;
     }
 
     .css-icon{
-        width: 150px;
-        height: 150px;
+        width: 125px;
+        height: 125px;
     }
 
     .javascript-icon{
-        width: 150px;
-        height: 150px;
+        width: 125px;
+        height: 125px;
     }
 
     .sass-icon{
-        width: 150px;
-        height: 150px;
+        width: 125px;
+        height: 125px;
     }
 
     .bootstrap-icon{
-        width: 150px;
-        height: 150px;
+        width: 125px;
+        height: 125px;
     }
 }
 
@@ -283,7 +321,7 @@ section {
         text-align: center;
         font-family: 'Fira Mono', monospace;
         color: #d51323;
-        font-size: 25px;
+        font-size: 20px;
     }
     
     li {
@@ -300,7 +338,7 @@ section {
         text-align: center;
         font-family: 'Fira Mono', monospace;
         color: #d51323;
-        font-size: 25px;
+        font-size: 20px;
     }
     
     li {
@@ -310,6 +348,9 @@ section {
 }
 
 #contact{
+
+    margin-top: 15em;
+    margin-bottom: 5em;
     h3 {
         color: $color-fuente;
         font-family: 'Poppins', sans-serif;
@@ -323,10 +364,21 @@ section {
 
     li {
         list-style: none;
+
+        p{
+            font-family: 'Fira Mono', monospace;
+            color: $color-secundario;
+            margin-left: 48%;
+        }
     }
 
     a{
-        margin-left: 48%;
+        margin-left: 46.5%;
+
+        img {
+            width: 120px;
+            height: 120px;
+        }
     }
 }
 
@@ -334,5 +386,83 @@ section {
     #aside{
         display: none;
     }
+
+    #hero{
+        margin-top: 6em;
+
+        img{
+            margin-top: 10em;
+        }
+    }
   }
 
+  @media only screen and (max-width: 900px) {
+    
+    #about-me{
+        h3{
+            .linea-h3{
+                display: none;
+            }
+        }
+    }
+
+    #skills{
+        h3{
+            .linea-h3{
+                display: none;
+            }
+        }
+    }
+
+    #my-projects{
+        h3{
+            .linea-h3{
+                display: none;
+            }
+        }
+    }
+}
+
+/*@keyframes a-load{
+    0%{
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes hero-load {
+    0%{
+        opacity: 0;
+        transform: translateY(10%);
+    }
+
+
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}*/
+
+@keyframes aside-load {
+    0%{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0%   { transform: translateY(0); }
+    30%  { transform: translateY(-100px); }
+    50%  { transform: translateY(0); }
+    100% { transform: translateY(0); }
+}
