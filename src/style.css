@@ -10,16 +10,71 @@ body {
 
 #navbar {
   width: 99.9%;
-  min-height: 60px;
   /* border: 1px solid blue; */
   overflow: hidden;
   position: fixed;
+  height: 60px;
   top: 0;
   z-index: 1;
   -webkit-backdrop-filter: blur(15px);
   backdrop-filter: blur(15px);
   -webkit-box-shadow: -14px 18px 17px -15px rgba(0, 0, 0, 0.75);
   box-shadow: -14px 18px 17px -15px rgba(0, 0, 0, 0.75);
+}
+
+.mostrar {
+  display: block;
+}
+
+.ocultar {
+  display: none;
+}
+
+#mobileMenu {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: #151415;
+  z-index: 999;
+  width: 66%;
+  height: 100vh;
+  padding: 1em;
+}
+
+#mobileMenu #exitMenu {
+  height: 60px;
+  width: 60px;
+  float: right;
+  margin: 0.5em;
+  cursor: pointer;
+}
+
+#mobileMenu ul {
+  margin-top: 5em;
+}
+
+#mobileMenu ul li {
+  list-style: none;
+  display: block;
+  padding: 0.5em;
+  font-size: 1.3em;
+  text-align: right;
+}
+
+#mobileMenu ul li a {
+  text-decoration: none;
+  color: #ccd6f6;
+  font-family: 'Fira Mono', monospace;
+}
+
+#mobileMenu ul li a:hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  color: #d51323;
+}
+
+#mobileMenu ul li span {
+  color: #d51323;
 }
 
 #logo {
@@ -40,7 +95,7 @@ body {
 
 .botones-nav a {
   text-decoration: none;
-  color: white;
+  color: #ccd6f6;
   font-size: 12px;
 }
 
@@ -61,12 +116,6 @@ body {
 #hamburguer-menu img {
   width: 40px;
   height: 40px;
-}
-
-#cerrar-menu img {
-  width: 60px;
-  height: 60px;
-  display: none;
 }
 
 #flex-container {

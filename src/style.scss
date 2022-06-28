@@ -15,10 +15,10 @@ body {
 
 #navbar{
     width: 99.9%;
-    min-height: 60px;
     /* border: 1px solid blue; */
     overflow: hidden;
     position: fixed;
+    height: 60px;
     top: 0;
     z-index: 1;
     -webkit-backdrop-filter: blur(15px);
@@ -27,6 +27,61 @@ body {
     -moz-box-shadow: -14px 18px 17px -15px rgba(0,0,0,0.75);
     box-shadow: -14px 18px 17px -15px rgba(0,0,0,0.75);
 }
+
+.mostrar{
+    display: block;
+}
+
+.ocultar{
+    display: none;
+}
+
+#mobileMenu{
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: #151415;
+    z-index: 999;
+    width: 66%;
+    height: 100vh;
+    padding: 1em;
+
+    #exitMenu{
+        height: 60px;
+        width: 60px;
+        float: right;
+        margin: 0.5em;
+        cursor: pointer;
+    }
+
+    ul{
+        margin-top: 5em;
+
+        li{
+            list-style: none;
+            display: block;
+            padding: 0.5em;
+            font-size: 1.3em;
+            text-align: right;
+
+            a{
+                text-decoration: none;
+                color: $color-fuente;
+                font-family: 'Fira Mono', monospace;
+            }
+
+            a:hover {
+                transition: 0.2s;
+                color: $color-secundario
+            }
+
+            span{
+                color: $color-secundario;
+            }
+        }
+    }
+}
+
 
 #logo{
     float: left;
@@ -45,7 +100,7 @@ body {
 
     a {
         text-decoration: none;
-        color: white;
+        color: $color-fuente;
         font-size: 12px;
     }
 
@@ -59,6 +114,8 @@ body {
     }
 }
 
+
+
 #hamburguer-menu{
 
     display: none;
@@ -68,13 +125,6 @@ body {
     }
 }
 
-#cerrar-menu{
-    img {
-        width: 60px;
-        height: 60px;
-        display: none;
-    }
-}
 
 #flex-container{
     display: flex;
@@ -420,6 +470,7 @@ section {
     .botones-nav{
         display: none;
     }
+
   }
 
   @media only screen and (max-width: 900px) {
