@@ -54,6 +54,21 @@ body {
   color: #d51323;
 }
 
+#hamburguer-menu {
+  display: none;
+}
+
+#hamburguer-menu img {
+  width: 40px;
+  height: 40px;
+}
+
+#cerrar-menu img {
+  width: 60px;
+  height: 60px;
+  display: none;
+}
+
 #flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -386,6 +401,12 @@ section {
   }
   #hero img {
     margin-top: 10em;
+  }
+  #hamburguer-menu {
+    display: block;
+  }
+  .botones-nav {
+    display: none;
   }
 }
 

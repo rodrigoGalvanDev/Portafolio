@@ -33,6 +33,7 @@ body {
     padding: 10px;
 }
 
+
 .botones-nav{
     display: block;
     float: right;
@@ -55,6 +56,23 @@ body {
 
     span{
         color: $color-secundario;
+    }
+}
+
+#hamburguer-menu{
+
+    display: none;
+    img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+#cerrar-menu{
+    img {
+        width: 60px;
+        height: 60px;
+        display: none;
     }
 }
 
@@ -393,6 +411,14 @@ section {
         img{
             margin-top: 10em;
         }
+    }
+
+    #hamburguer-menu{
+        display: block;
+    }
+
+    .botones-nav{
+        display: none;
     }
   }
 
