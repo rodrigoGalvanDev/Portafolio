@@ -39,6 +39,8 @@ body {
   width: 66%;
   height: 100vh;
   padding: 1em;
+  -webkit-animation: menu-load 300ms ease-out;
+          animation: menu-load 300ms ease-out;
 }
 
 #mobileMenu #exitMenu {
@@ -457,9 +459,6 @@ section {
   .botones-nav {
     display: none;
   }
-}
-
-@media only screen and (max-width: 900px) {
   #about-me h3 .linea-h3 {
     display: none;
   }
@@ -471,19 +470,67 @@ section {
   }
 }
 
-/*@keyframes a-load{
-    0%{
-        opacity: 0;
-        transform: translateY(-100%);
-    }
-
-    100%{
-        opacity: 1;
-        transform: translateY(0);
-    }
+@-webkit-keyframes a-load {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
-@keyframes hero-load {
+@keyframes a-load {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes menu-load {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes menu-load {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+div[id] {
+  scroll-margin-top: 70px;
+}
+
+/*@keyframes hero-load {
     0%{
         opacity: 0;
         transform: translateY(10%);
