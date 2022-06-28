@@ -151,13 +151,16 @@ body {
     }
 
     .texto-vertical {
-        font-family: 'Fira Mono', monospace;
-        font-size: 12px;
-        color: $color-fuente;
         writing-mode: vertical-lr;
         transform: rotate(180deg);
         margin-bottom: 10px;
         margin-left: -5px;
+        
+        a {
+            font-family: 'Fira Mono', monospace;
+            font-size: 12px;
+            color: $color-fuente;
+        }
     }
 
     .line-vertical{

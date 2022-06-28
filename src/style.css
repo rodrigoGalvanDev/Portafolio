@@ -147,9 +147,6 @@ body {
 }
 
 #aside .texto-vertical {
-  font-family: 'Fira Mono', monospace;
-  font-size: 12px;
-  color: #ccd6f6;
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
@@ -157,6 +154,12 @@ body {
           transform: rotate(180deg);
   margin-bottom: 10px;
   margin-left: -5px;
+}
+
+#aside .texto-vertical a {
+  font-family: 'Fira Mono', monospace;
+  font-size: 12px;
+  color: #ccd6f6;
 }
 
 #aside .line-vertical {
