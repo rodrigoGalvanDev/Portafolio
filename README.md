@@ -1,2 +1,2 @@
 # Portafolio
- Desarrolado con JavaScript, HTML, CSS, Sass y Bootstrap
+ Desarrolado con JavaScript, HTML, CSS, Sass
