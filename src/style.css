@@ -485,6 +485,22 @@ section {
   }
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #212021;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccd6f6;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d51323;
+}
+
 @-webkit-keyframes a-load {
   0% {
     opacity: 0;
