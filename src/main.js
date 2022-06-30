@@ -3,21 +3,21 @@ const $menuNav = document.querySelector("#abrirMenu");
 const $menuMobile = document.querySelector("#mobileMenu");
 const $cerrarMenu = document.querySelector("#exitMenu")
 
-$cerrarMenu.onclick = function cerrarMenuCruz(){
-      $menuMobile.classList.remove("mostrar")
-      $menuMobile.classList.add("ocultar")
+$cerrarMenu.onclick = function closeMenuCross(){
+      $menuMobile.classList.remove("show")
+      $menuMobile.classList.add("hide")
 }
 
-$menuNav.onclick = function abrirMenu(){
-      $menuMobile.classList.remove("ocultar");
-      $menuMobile.classList.add("mostrar");
+$menuNav.onclick = function openMenu(){
+      $menuMobile.classList.remove("hide");
+      $menuMobile.classList.add("show");
 }
 
 
 //Botones del menu mobile
 const $buttonsMobile = document.querySelector('#button-mb-menu')
 
-$buttonsMobile.onclick = function cerrarMenuButton(){
-      $menuMobile.classList.remove("mostrar")
-      $menuMobile.classList.add("ocultar")
+$buttonsMobile.onclick = function closeMenuButton(){
+      $menuMobile.classList.remove("show")
+      $menuMobile.classList.add("hide")
 }

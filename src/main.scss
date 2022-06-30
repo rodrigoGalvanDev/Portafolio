@@ -15,7 +15,6 @@ body {
 
 #navbar{
     width: 99.9%;
-    /* border: 1px solid blue; */
     overflow: hidden;
     position: fixed;
     height: 60px;
@@ -28,11 +27,11 @@ body {
     box-shadow: -14px 18px 17px -15px rgba(0,0,0,0.75);
 }
 
-.mostrar{
+.show{
     display: block;
 }
 
-.ocultar{
+.hide{
     display: none;
 }
 
@@ -148,14 +147,14 @@ body {
     flex: 1;
     height: 100%;
 
-    .linea-texto{
+    .line-text{
         position: fixed;
         bottom: 0;
         left: 3em;
         animation: aside-load 0.8s ease-in-out;
     }
 
-    .texto-vertical {
+    .text-vertical {
         writing-mode: vertical-lr;
         transform: rotate(180deg);
         margin-bottom: 10px;
@@ -185,7 +184,6 @@ main {
 section {
     width: 87%;
     float: left;
-    //border: 1px solid red;
 }
 
 #hero {
@@ -240,7 +238,7 @@ section {
         font-size: 35px;
         color: $color-fuente;
 
-        .linea-h3 {
+        .line-h3 {
             background-color: $color-fuente;
             height: 1px;
             width: 30%;
@@ -269,7 +267,7 @@ section {
 }
 
 #my-projects{
-    margin-left: 9em;
+    margin-left: 6em;
     margin-bottom: 15em;
 
     h3{
@@ -277,7 +275,7 @@ section {
         font-size: 35px;
         color: $color-fuente;
 
-        .linea-h3{
+        .line-h3{
             background-color: $color-fuente;
             height: 1px;
             width: 30%;
@@ -359,7 +357,6 @@ section {
     margin-left: 6em;
     margin-bottom: 10em;
     margin-top: 20em;
-    //border: 1px solid rgb(215, 91, 8);
 
 
     h3 {
@@ -367,7 +364,7 @@ section {
         font-size: 35px;
         color: $color-fuente;
 
-        .linea-h3 {
+        .line-h3 {
             background-color: $color-fuente;
             height: 1px;
             width: 30%;
@@ -442,15 +439,20 @@ section {
 
     margin-top: 15em;
     margin-bottom: 5em;
+    margin-left: 35em;
     h3 {
         color: $color-fuente;
         font-family: 'Poppins', sans-serif;
         font-size: 35px;
-        text-align: center;
+        
     }
 
     h3 span {
         color: $color-secundario
+    }
+
+    ul{
+        margin-left: 10em;
     }
 
     li {
@@ -459,13 +461,11 @@ section {
         p{
             font-family: 'Fira Mono', monospace;
             color: $color-secundario;
-            margin-left: 48%;
         }
     }
 
     a{
-        margin-left: 46.5%;
-
+        margin-left: -1.5em;
         img {
             width: 120px;
             height: 120px;
@@ -473,16 +473,32 @@ section {
     }
 }
 
+
 @media only screen and (max-width: 900px) {
+    
+    
+    section{
+        margin: 0px;
+        padding: 0px;
+    }
+    
     #aside{
         display: none;
+        width: 0%;
     }
 
     #hero{
+        margin-left: 1em;
         margin-top: 6em;
+
+        h1{
+            font-size: 70px;
+            margin-bottom: 2em;
+        }
 
         img{
             margin-top: 10em;
+            margin-left: 9em
         }
     }
 
@@ -495,29 +511,58 @@ section {
     }
 
     #about-me{
+        margin-left: 1em;
+        p{
+            width: 100%;
+            padding-bottom: 40px;
+        }
         h3{
-            .linea-h3{
+            .line-h3{
                 display: none;
             }
         }
     }
 
     #skills{
+        margin-left: 1em;
         h3{
-            .linea-h3{
+            .line-h3{
                 display: none;
             }
         }
     }
 
     #my-projects{
+        margin-left: 1em;
         h3{
-            .linea-h3{
+            .line-h3{
                 display: none;
             }
         }
     }
+
+    #contact{
+        margin-left: 1em;
+        ul{
+            margin-left: 9em;
+
+            a{
+                margin-left: -2em;
+            }
+        }
+    }
 }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 3) {
+    #hero{
+        margin-top: 4em;
+
+        h1{
+            margin-bottom: 1em;
+        }
+    }
+}
+
 
 
 ::-webkit-scrollbar {
@@ -570,18 +615,6 @@ div[id]{
     scroll-margin-top: 70px;
 }
 
-/*@keyframes hero-load {
-    0%{
-        opacity: 0;
-        transform: translateY(10%);
-    }
-
-
-    100%{
-        opacity: 1;
-        transform: translateY(0%);
-    }
-}*/
 
 @keyframes aside-load {
     0%{
