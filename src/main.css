@@ -205,6 +205,7 @@ section {
 }
 
 #hero h1 {
+  cursor: pointer;
   color: #ccd6f6;
   font-size: 90px;
   font-family: 'Poppins', sans-serif;
@@ -322,6 +323,7 @@ section {
 }
 
 #my-projects #cards .card1 .p-card1 {
+  padding-top: 10px;
   font-family: 'Fira Mono', monospace;
   color: #ccd6f6;
   text-decoration: none;
@@ -329,7 +331,7 @@ section {
 }
 
 #my-projects #cards .card1 .tech-card1 {
-  margin-top: 133px;
+  margin-top: 125px;
   margin-left: 10px;
   font-family: 'Fira Mono', monospace;
   color: #d51323;
