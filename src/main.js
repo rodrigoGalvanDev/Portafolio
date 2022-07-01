@@ -21,3 +21,25 @@ $buttonsMobile.onclick = function closeMenuButton(){
       $menuMobile.classList.remove("show")
       $menuMobile.classList.add("hide")
 }
+
+//Calcular edad
+
+function getAge() {
+      let today = new Date()
+      let birthday = new Date("11/19/1999") //Mi cumpleanios
+      let age = today.getFullYear() - birthday.getFullYear()
+      let monthdifference = today.getMonth() - birthday.getMonth()
+      if (
+        monthdifference < 0 ||
+        (monthdifference === 0 && today.getDate() < birthday.getDate())
+      ) {
+        age--
+      }
+      return age
+    }
+
+//Mostrar edad
+
+const $myAge = document.querySelector(".myAge")
+$myAge.innerHTML = getAge()
+
