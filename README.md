@@ -1,6 +1,6 @@
 # Portafolio
 
-npm install aos --save
+npm i
 
 Para correr el proyecto localmente
 
