@@ -18,6 +18,7 @@ body {
   -webkit-backdrop-filter: blur(15px);
   backdrop-filter: blur(15px);
   -webkit-box-shadow: -14px 18px 17px -15px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -14px 18px 17px -15px rgba(0, 0, 0, 0.75);
   box-shadow: -14px 18px 17px -15px rgba(0, 0, 0, 0.75);
 }
 
@@ -38,10 +39,8 @@ body {
   width: 66%;
   height: 100vh;
   padding: 1em;
-  -webkit-animation: menu-load 300ms ease-out;
-          animation: menu-load 300ms ease-out;
+  animation: menu-load 300ms ease-out;
 }
-
 #mobileMenu #exitMenu {
   height: 60px;
   width: 60px;
@@ -49,11 +48,9 @@ body {
   margin: 0.5em;
   cursor: pointer;
 }
-
 #mobileMenu ul {
   margin-top: 5em;
 }
-
 #mobileMenu ul li {
   list-style: none;
   display: block;
@@ -61,19 +58,15 @@ body {
   font-size: 1.3em;
   text-align: right;
 }
-
 #mobileMenu ul li a {
   text-decoration: none;
   color: #ccd6f6;
-  font-family: 'Fira Mono', monospace;
+  font-family: "Fira Mono", monospace;
 }
-
 #mobileMenu ul li a:hover {
-  -webkit-transition: 0.2s;
   transition: 0.2s;
   color: #d51323;
 }
-
 #mobileMenu ul li span {
   color: #d51323;
 }
@@ -82,7 +75,6 @@ body {
   float: left;
   padding: 10px;
 }
-
 #logo .logo-image {
   width: 50px;
   height: 50px;
@@ -94,23 +86,18 @@ body {
   list-style: none;
   margin-right: 40px;
   margin-top: 20px;
-  font-family: 'Fira Mono', monospace;
-  -webkit-animation: a-load 300ms ease-out;
-          animation: a-load 300ms ease-out;
+  font-family: "Fira Mono", monospace;
+  animation: a-load 300ms ease-out;
 }
-
 .botones-nav a {
   text-decoration: none;
   color: #ccd6f6;
   font-size: 13px;
 }
-
 .botones-nav a:hover {
-  -webkit-transition: 0.2s;
   transition: 0.2s;
   color: #d51323;
 }
-
 .botones-nav span {
   color: #d51323;
 }
@@ -118,54 +105,39 @@ body {
 #hamburguer-menu {
   display: none;
 }
-
 #hamburguer-menu img {
   width: 40px;
   height: 40px;
 }
 
 #flex-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 #aside {
   float: left;
   width: 12%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
   height: 100%;
 }
-
 #aside .line-text {
   position: fixed;
   bottom: 0;
   left: 3em;
-  -webkit-animation: aside-load 0.8s ease-in-out;
-          animation: aside-load 0.8s ease-in-out;
+  animation: aside-load 0.8s ease-in-out;
 }
-
 #aside .text-vertical {
-  -webkit-writing-mode: vertical-lr;
-      -ms-writing-mode: tb-lr;
-          writing-mode: vertical-lr;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
   margin-bottom: 10px;
   margin-left: -5px;
 }
-
 #aside .text-vertical a {
-  font-family: 'Fira Mono', monospace;
+  font-family: "Fira Mono", monospace;
   font-size: 12px;
   color: #ccd6f6;
 }
-
 #aside .line-vertical {
   height: 15em;
   width: 1px;
@@ -186,42 +158,32 @@ section {
   margin-top: 18em;
   margin-bottom: 35em;
 }
-
 #hero img {
   width: 75px;
   height: 75px;
   margin-top: 20em;
   margin-left: 35%;
-  -webkit-animation-name: bounce;
-          animation-name: bounce;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  animation-name: bounce;
+  animation-timing-function: ease;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
 }
-
 #hero h1 {
   cursor: pointer;
   color: #ccd6f6;
   font-size: 90px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
-
 #hero h1 span:hover {
-  -webkit-transition: 0.2s;
   transition: 0.2s;
   color: #d51323;
 }
-
 #hero p {
   margin-top: 2em;
   color: #ccd6f6;
   opacity: 0.7;
-  font-family: 'Fira Mono', monospace;
+  font-family: "Fira Mono", monospace;
   font-size: 30px;
 }
 
@@ -229,33 +191,28 @@ section {
   margin-left: 6em;
   margin-bottom: 15em;
 }
-
 #about-me h3 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 35px;
   color: #ccd6f6;
 }
-
 #about-me h3 .line-h3 {
   background-color: #ccd6f6;
   height: 1px;
   width: 30%;
   display: inline-block;
 }
-
 #about-me h3 span {
   color: #d51323;
 }
-
 #about-me p {
   color: #ccd6f6;
   opacity: 0.7;
-  font-family: 'Fira Mono', monospace;
+  font-family: "Fira Mono", monospace;
   font-size: 22px;
   width: 65%;
   display: inline-block;
 }
-
 #about-me img {
   width: 220px;
   height: 220px;
@@ -266,148 +223,114 @@ section {
   margin-left: 6em;
   margin-bottom: 15em;
 }
-
 #my-projects h3 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 35px;
   color: #ccd6f6;
 }
-
 #my-projects h3 .line-h3 {
   background-color: #ccd6f6;
   height: 1px;
   width: 30%;
   display: inline-block;
 }
-
 #my-projects span {
   color: #d51323;
 }
-
 #my-projects #cards {
   margin-top: 3em;
   display: flex;
   flex-wrap: wrap;
   gap: 2em;
 }
-
 #my-projects #cards .card1 {
   width: 300px;
   height: 500px;
-  -webkit-box-shadow: 0 0 30px black;
-          box-shadow: 0 0 30px black;
+  box-shadow: 0 0 30px rgb(0, 0, 0);
   position: relative;
-  -webkit-transition: -webkit-transform ease 300ms;
-  transition: -webkit-transform ease 300ms;
   transition: transform ease 300ms;
-  transition: transform ease 300ms, -webkit-transform ease 300ms;
 }
-
 #my-projects #cards .card1 .card1-image {
   width: 300px;
   height: 300px;
   background-image: linear-gradient(135deg, #d51323, #ff0011);
 }
-
 #my-projects #cards .card1 img {
   width: 300px;
   height: 300px;
   opacity: 0.7;
 }
-
 #my-projects #cards .card1 a {
   text-decoration: none;
 }
-
 #my-projects #cards .card1 .description-card1 {
   height: 200px;
   width: 300px;
   background-color: #151415;
 }
-
 #my-projects #cards .card1 .p-card1 {
   padding-top: 10px;
-  font-family: 'Fira Mono', monospace;
+  font-family: "Fira Mono", monospace;
   color: #ccd6f6;
   text-decoration: none;
   margin-left: 10px;
 }
-
 #my-projects #cards .card1 .tech-card1 {
   margin-top: 125px;
   margin-left: 10px;
-  font-family: 'Fira Mono', monospace;
+  font-family: "Fira Mono", monospace;
   color: #d51323;
 }
-
 #my-projects #cards .card1:hover {
-  -webkit-transform: translate(0, -10px);
-          transform: translate(0, -10px);
+  transform: translate(0, -10px);
 }
-
 #my-projects #cards .card1:hover img {
   opacity: 1;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-
 #my-projects #cards .card2 {
   width: 300px;
   height: 500px;
-  -webkit-box-shadow: 0 0 30px black;
-          box-shadow: 0 0 30px black;
+  box-shadow: 0 0 30px rgb(0, 0, 0);
   position: relative;
-  -webkit-transition: -webkit-transform ease 300ms;
-  transition: -webkit-transform ease 300ms;
   transition: transform ease 300ms;
-  transition: transform ease 300ms, -webkit-transform ease 300ms;
 }
-
 #my-projects #cards .card2 .card2-image {
   width: 300px;
   height: 300px;
   background-image: linear-gradient(135deg, #d51323, #ff0011);
 }
-
 #my-projects #cards .card2 img {
   width: 300px;
   height: 300px;
   opacity: 0.7;
 }
-
 #my-projects #cards .card2 a {
   text-decoration: none;
 }
-
 #my-projects #cards .card2 .description-card2 {
   height: 200px;
   width: 300px;
   background-color: #151415;
 }
-
 #my-projects #cards .card2 .p-card2 {
   padding-top: 10px;
-  font-family: 'Fira Mono', monospace;
+  font-family: "Fira Mono", monospace;
   color: #ccd6f6;
   text-decoration: none;
   margin-left: 10px;
 }
-
 #my-projects #cards .card2 .tech-card2 {
-  margin-top: 88px;
+  margin-top: 87px;
   margin-left: 10px;
-  font-family: 'Fira Mono', monospace;
+  font-family: "Fira Mono", monospace;
   color: #d51323;
 }
-
 #my-projects #cards .card2:hover {
-  -webkit-transform: translate(0, -10px);
-          transform: translate(0, -10px);
+  transform: translate(0, -10px);
 }
-
 #my-projects #cards .card2:hover img {
   opacity: 1;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -416,44 +339,36 @@ section {
   margin-bottom: 10em;
   margin-top: 20em;
 }
-
 #skills h3 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 35px;
   color: #ccd6f6;
 }
-
 #skills h3 .line-h3 {
   background-color: #ccd6f6;
   height: 1px;
   width: 30%;
   display: inline-block;
 }
-
 #skills span {
   color: #d51323;
 }
-
 #skills .postman-icon {
   width: 125px;
   height: 125px;
 }
-
 #skills .playwright-icon {
   width: 125px;
   height: 125px;
 }
-
 #skills .typescript-icon {
   width: 125px;
   height: 125px;
 }
-
 #skills .mysql-icon {
   width: 125px;
   height: 125px;
 }
-
 #skills .swagger-icon {
   width: 125px;
   height: 125px;
@@ -462,14 +377,12 @@ section {
 #table-skills1 {
   padding-top: 5em;
 }
-
 #table-skills1 p {
   text-align: center;
-  font-family: 'Fira Mono', monospace;
+  font-family: "Fira Mono", monospace;
   color: #d51323;
   font-size: 20px;
 }
-
 #table-skills1 li {
   padding-left: 2em;
   display: inline-block;
@@ -477,11 +390,10 @@ section {
 
 #table-skills2 p {
   text-align: center;
-  font-family: 'Fira Mono', monospace;
+  font-family: "Fira Mono", monospace;
   color: #d51323;
   font-size: 20px;
 }
-
 #table-skills2 li {
   padding-left: 2em;
   display: inline-block;
@@ -492,34 +404,27 @@ section {
   margin-bottom: 5em;
   margin-left: 35em;
 }
-
 #contact h3 {
   color: #ccd6f6;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 35px;
 }
-
 #contact h3 span {
   color: #d51323;
 }
-
 #contact ul {
   margin-left: 10em;
 }
-
 #contact li {
   list-style: none;
 }
-
 #contact li p {
-  font-family: 'Fira Mono', monospace;
+  font-family: "Fira Mono", monospace;
   color: #d51323;
 }
-
 #contact a {
   margin-left: -1.5em;
 }
-
 #contact a img {
   width: 120px;
   height: 120px;
@@ -570,14 +475,12 @@ section {
   }
   #my-projects {
     margin-left: 1em;
-
-  }
-
-  #my-projects #cards {
+    display: flex;
     flex-direction: column;
-    align-items: center;
   }
-
+  #my-projects #cards {
+    justify-content: center;
+  }
   #my-projects h3 .line-h3 {
     display: none;
   }
@@ -591,7 +494,6 @@ section {
     margin-left: -2em;
   }
 }
-
 @media only screen and (-webkit-min-device-pixel-ratio: 3) {
   #hero {
     margin-top: 4em;
@@ -600,7 +502,6 @@ section {
     margin-bottom: 1em;
   }
 }
-
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -617,58 +518,26 @@ section {
   background: #d51323;
 }
 
-@-webkit-keyframes a-load {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
 @keyframes a-load {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
+    transform: translateY(-100%);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
-
-@-webkit-keyframes menu-load {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-
 @keyframes menu-load {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
+    transform: translateX(100%);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
 }
-
 html {
   scroll-behavior: smooth;
 }
@@ -677,67 +546,29 @@ div[id] {
   scroll-margin-top: 70px;
 }
 
-@-webkit-keyframes aside-load {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
 @keyframes aside-load {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
+    transform: translateY(100%);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
-
-@-webkit-keyframes bounce {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  30% {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
-  }
-  50% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
 @keyframes bounce {
   0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
   30% {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
+    transform: translateY(-100px);
   }
   50% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
   100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
+
 /*# sourceMappingURL=main.css.map */
