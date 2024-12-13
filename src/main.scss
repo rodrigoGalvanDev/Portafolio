@@ -538,6 +538,9 @@ section {
 
     #my-projects{
         margin-left: 1em;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
         h3{
             .line-h3{
                 display: none;

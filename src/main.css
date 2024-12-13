@@ -286,6 +286,9 @@ section {
 
 #my-projects #cards {
   margin-top: 3em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
 }
 
 #my-projects #cards .card1 {
@@ -348,6 +351,66 @@ section {
   transition: 0.3s;
 }
 
+#my-projects #cards .card2 {
+  width: 300px;
+  height: 500px;
+  -webkit-box-shadow: 0 0 30px black;
+          box-shadow: 0 0 30px black;
+  position: relative;
+  -webkit-transition: -webkit-transform ease 300ms;
+  transition: -webkit-transform ease 300ms;
+  transition: transform ease 300ms;
+  transition: transform ease 300ms, -webkit-transform ease 300ms;
+}
+
+#my-projects #cards .card2 .card2-image {
+  width: 300px;
+  height: 300px;
+  background-image: linear-gradient(135deg, #d51323, #ff0011);
+}
+
+#my-projects #cards .card2 img {
+  width: 300px;
+  height: 300px;
+  opacity: 0.7;
+}
+
+#my-projects #cards .card2 a {
+  text-decoration: none;
+}
+
+#my-projects #cards .card2 .description-card2 {
+  height: 200px;
+  width: 300px;
+  background-color: #151415;
+}
+
+#my-projects #cards .card2 .p-card2 {
+  padding-top: 10px;
+  font-family: 'Fira Mono', monospace;
+  color: #ccd6f6;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+#my-projects #cards .card2 .tech-card2 {
+  margin-top: 88px;
+  margin-left: 10px;
+  font-family: 'Fira Mono', monospace;
+  color: #d51323;
+}
+
+#my-projects #cards .card2:hover {
+  -webkit-transform: translate(0, -10px);
+          transform: translate(0, -10px);
+}
+
+#my-projects #cards .card2:hover img {
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 #skills {
   margin-left: 6em;
   margin-bottom: 10em;
@@ -371,27 +434,27 @@ section {
   color: #d51323;
 }
 
-#skills .html-icon {
+#skills .postman-icon {
   width: 125px;
   height: 125px;
 }
 
-#skills .css-icon {
+#skills .playwright-icon {
   width: 125px;
   height: 125px;
 }
 
-#skills .javascript-icon {
+#skills .typescript-icon {
   width: 125px;
   height: 125px;
 }
 
-#skills .sass-icon {
+#skills .mysql-icon {
   width: 125px;
   height: 125px;
 }
 
-#skills .bootstrap-icon {
+#skills .swagger-icon {
   width: 125px;
   height: 125px;
 }
@@ -507,7 +570,14 @@ section {
   }
   #my-projects {
     margin-left: 1em;
+
   }
+
+  #my-projects #cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
   #my-projects h3 .line-h3 {
     display: none;
   }
